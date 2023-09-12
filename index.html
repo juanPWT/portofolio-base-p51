@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,13 +46,27 @@
                     <li class="font-extralight"><a>coming soon...</a></li>
                   </ul>
                 </li>
-                <li><a>About</a></li>
+                <li><a href="#about">About</a></li>
                 <li>
                   <div class="flex justify-center xl:hidden">
                     <span
                       class="mr-2 font-inter font-semibold text-slate-500 dark:text-white"
-                      >light</span
                     >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                        />
+                      </svg>
+                    </span>
                     <input type="checkbox" id="toggle" class="hidden" />
                     <label for="toggle">
                       <div
@@ -65,8 +79,22 @@
                     </label>
                     <span
                       class="ml-2 font-inter font-semibold text-slate-500 dark:text-white"
-                      >dark</span
                     >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                        />
+                      </svg>
+                    </span>
                   </div>
                 </li>
               </ul>
@@ -88,27 +116,53 @@
                   </ul>
                 </details>
               </li>
-              <li><a>About</a></li>
+              <li><a href="#about">About</a></li>
               <li>
                 <div class="flex justify-center">
                   <span
                     class="mr-2 font-inter font-semibold text-slate-500 dark:text-white"
-                    >light</span
-                  >
-                  <input type="checkbox" id="toggle" class="hidden" />
-                  <label for="toggle">
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                      />
+                    </svg>
+                  </span>
+                  <input type="checkbox" id="toggle-lg" class="hidden" />
+                  <label for="toggle-lg">
                     <div
                       class="w-9 h-5 bg-slate-300 rounded-full flex items-center p-1 cursor-pointer"
                     >
                       <div
-                        class="w-4 h-4 bg-white rounded-full toggle-circle"
+                        class="w-4 h-4 bg-white rounded-full toggle-circle2"
                       ></div>
                     </div>
                   </label>
                   <span
                     class="ml-2 font-inter font-semibold text-slate-500 dark:text-white"
-                    >dark</span
-                  >
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                      />
+                    </svg>
+                  </span>
                 </div>
               </li>
             </ul>
@@ -123,10 +177,7 @@
       <div class="relative z-0">
         <div class="hero min-h-screen bg-base-100 dark:bg-gray-600">
           <div class="hero-content flex-col lg:flex-row-reverse">
-            <img
-              src="./img/hero.png"
-              class="max-w-xs rounded-lg shadow-xl xl:max-w-xl xl:shadow-2xl dark:shadow-md dark:xl:shadow-2xl"
-            />
+            <img src="./img/hero.png" class="max-w-xs rounded-lg xl:max-w-xl" />
             <div class="p-5 md:p-10 dark:text-gray-100">
               <h1 class="text-4xl md:text-5xl font-bold">Selamat Datang</h1>
               <h1 class="text-3xl font-semibold py-6 md:py-0">di galeri P51</h1>
@@ -137,8 +188,169 @@
             </div>
           </div>
         </div>
+        <!--end /content/hero  -->
+
+        <!-- /content/about  -->
+        <div
+          id="about"
+          class="container min-w-full mx-auto py-20 flex flex-col dark:bg-gray-600"
+        >
+          <h1 class="text-2xl font-bold mx-auto dark:text-gray-100">
+            About App
+          </h1>
+          <div class="p-10">
+            <p class="font-light dark:text-gray-300">
+              <span class="italic text-xl font-semibold">
+                "Lorem ipsum dolor sit amet" </span
+              >, consectetur adipisicing elit. Possimus debitis officiis, vitae
+              suscipit eius deserunt ipsa rem accusamus. Quis quod totam,
+              libero, explicabo consequuntur quaerat saepe unde id non earum
+              enim ut voluptatibus dolore aperiam veniam tempora aliquid quo
+              consectetur aliquam? Illum fuga aperiam corporis ex esse! Deleniti
+              fugit exercitationem perspiciatis dolore veritatis Lorem ipsum
+              dolor sit, amet consectetur adipisicing elit. Exercitationem, qui.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              iure?
+            </p>
+          </div>
+        </div>
+        <!--end  /content/about  -->
+
+        <!-- /content/profil-portogolio  -->
+        <div
+          class="container min-w-full mx-auto py-5 flex flex-col dark:bg-gray-600 bg-red-200s"
+        >
+          <h1 class="text-2xl font-bold mx-auto dark:text-gray-100 mb-10">
+            People Portofolio
+          </h1>
+          <div
+            class="grid grid-cols-1 mx-auto gap-5 sm:grid-cols-2 sm:gap-7 md:grid-cols-3"
+          >
+            <div class="card w-96 bg-base-200 shadow-xl mb-5 dark:bg-gray-700">
+              <figure>
+                <img
+                  src="/img/people/tirta.jpg"
+                  alt="peoples"
+                  class="aspect-video rounded-t-lg object-cover w-full h-48"
+                />
+              </figure>
+              <div class="card-body dark:bg-gray-500">
+                <h2 class="card-title dark:text-gray-100">Hamba Tuhan</h2>
+                <div class="card-actions justify-start mb-2 dark:text-gray-100">
+                  <div class="badge badge-outline">Frontend</div>
+                  <div class="badge badge-outline">Backend</div>
+                </div>
+                <a href="https://github.com/juanPWT" target="_blank">
+                  <div
+                    class="w-30 h-10 bg-gray-600 rounded-xl flex hover:bg-gray-800"
+                  >
+                    <div
+                      class="text-base-200 text-xl m-auto font-semibold flex"
+                    >
+                      <div class=""></div>
+                      <span> GitHub </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div
+                    class="w-30 h-10 bg-blue-500 rounded-xl flex hover:bg-gray-800"
+                  >
+                    <div
+                      class="text-base-200 text-xl m-auto font-semibold flex"
+                    >
+                      <div class=""></div>
+                      <span> Linkedin </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card w-96 bg-base-200 shadow-xl mb-5 dark:bg-gray-700">
+              <figure>
+                <img
+                  src=""
+                  alt="peoples"
+                  class="aspect-video rounded-t-lg object-cover w-full h-48"
+                />
+              </figure>
+              <div class="card-body dark:bg-gray-500">
+                <h2 class="card-title dark:text-gray-100">coming soon....</h2>
+                <div class="card-actions justify-start mb-2 dark:text-gray-100">
+                  <div class="badge badge-outline">soon</div>
+                  <div class="badge badge-outline">soon</div>
+                </div>
+                <a href="https://github.com/juanPWT" target="_blank">
+                  <div
+                    class="w-30 h-10 bg-gray-600 rounded-xl flex hover:bg-gray-800"
+                  >
+                    <div
+                      class="text-base-200 text-xl m-auto font-semibold flex"
+                    >
+                      <div class=""></div>
+                      <span> GitHub </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div
+                    class="w-30 h-10 bg-blue-500 rounded-xl flex hover:bg-gray-800"
+                  >
+                    <div
+                      class="text-base-200 text-xl m-auto font-semibold flex"
+                    >
+                      <div class=""></div>
+                      <span> Linkedin </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card w-96 bg-base-200 shadow-xl mb-5 dark:bg-gray-700">
+              <figure>
+                <img
+                  src=""
+                  alt="peoples"
+                  class="aspect-video rounded-t-lg object-cover w-full h-48"
+                />
+              </figure>
+              <div class="card-body dark:bg-gray-500">
+                <h2 class="card-title dark:text-gray-100">coming soon</h2>
+                <div class="card-actions justify-start mb-2 dark:text-gray-100">
+                  <div class="badge badge-outline">soon</div>
+                  <div class="badge badge-outline">soon</div>
+                </div>
+                <a href="https://github.com/juanPWT" target="_blank">
+                  <div
+                    class="w-30 h-10 bg-gray-600 rounded-xl flex hover:bg-gray-800"
+                  >
+                    <div
+                      class="text-base-200 text-xl m-auto font-semibold flex"
+                    >
+                      <div class=""></div>
+                      <span> GitHub </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div
+                    class="w-30 h-10 bg-blue-500 rounded-xl flex hover:bg-gray-800"
+                  >
+                    <div
+                      class="text-base-200 text-xl m-auto font-semibold flex"
+                    >
+                      <div class=""></div>
+                      <span> Linkedin </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--end  /content/profil-portofolio  -->
       </div>
-      <!--end /content/hero  -->
 
       <!-- end of content  -->
 
