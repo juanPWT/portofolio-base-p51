@@ -5,3 +5,7 @@
 #toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3 bg-slate-500;
 }
+
+#toggle-lg:checked ~ label div.toggle-circle2 {
+  @apply translate-x-3 bg-slate-500;
+}
